@@ -1,0 +1,9 @@
+<div class="form-group row">
+    <label class="col-sm-2 col-form-label"> Name</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="name"
+        placeholder="Enter Name">
+    </div>
+</div>
+<button (click)="addName()" *ngIf="temp.id==0" class="btn btn-primary">Add</button>
+<button (click)="updateName()" *ngIf="temp.id!=0" class="btn btn-primary">Update</button>
